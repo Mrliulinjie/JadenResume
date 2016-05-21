@@ -1,11 +1,14 @@
 ~function () {
     var wHeight = getDom.getHeight();
-    var J_ASTotalContainer = getDom.getID("J_ASTotalContainer"), as_shelter = getDom.getClassName("as-shelter")[0];
+    var J_ASTotalContainer = getDom.getID("J_ASTotalContainer"), as_shelter = getDom.getClassName("as-shelter")[0];//顶部搜索框
     var mui_mbar = getDom.getClassName("mui-mbar-status-standard")[0];
     var mui_tabs = getDom.getClassName("mui-mbar-tabs-narrow")[0];
     var mui_mask = getDom.getClassName("mui-mbar-tabs-mask")[0];
-    utils.hide(J_ASTotalContainer);
-    utils.hide(as_shelter);
+    var J_FpLift = getDom.getID("J_FpLift");//左侧滚动条
+    var hot_brand = getDom.getClassName("j_newHotBrandBody")[0];
+
+    //utils.hide(J_ASTotalContainer);
+    //utils.hide(as_shelter);
     setHeight();
     /*设置右侧导航高度*/
     function setHeight() {
@@ -15,6 +18,18 @@
     }
 
     window.onscroll = function () {
+        var scrollT = utils.win("scrollTop");
+        var offsetBody = utils.offset(hot_brand).offsetTop;
+        console.log(scrollT, offsetBody)
+        scrollT > offsetBody - 350 ? utils.show(J_FpLift) : utils.hide(J_FpLift);
+        if (scrollT > offsetBody) {
+            utils.addClass(as_shelter, "show");
+            utils.addClass(J_ASTotalContainer, "show");
+        }
+        else {
+            utils.removeClass(as_shelter, "show");
+            utils.removeClass(J_ASTotalContainer, "show");
+        }
         setHeight();
     }
 }();
@@ -64,6 +79,9 @@
     [].myForEach.call(menuList, function (item) {
         utils.hide(item);
     });
+    [].myForEach.call(menuList, function (item) {
+        utils.hide(item);
+    });
     /*处理左侧菜单导航*/
     var str = "";
     [].myForEach.call(tab_lilist, function (item, index) {
@@ -104,16 +122,6 @@
         str += "</div>";
     }, tab_lilist);
     categoryContent.innerHTML += str;
-    [].myForEach.call(tab_lilist, function (item, index) {
-        //item.index = index;
-        item.onmousemove = function () {
-            // utils.addClass(this, "selected");
-        };
-        //item.onmouseout = function () {
-        //    utils.hide(CategoryPannel[this.index]);
-        //    utils.removeClass(this, "selected");
-        //};
-    }, tab_lilist);
 }();
 
 function htmlStr() {

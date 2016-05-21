@@ -29,7 +29,7 @@ var utils = (function () {
 
     //->offset:获取元素距离body的偏移量
     function offset(curEle) {
-        var eleLeft = curEle.offsetLeft, eleTop = curEle.offsettop, par = curEle.offsetParent;
+        var eleLeft = curEle.offsetLeft, eleTop = curEle.offsetTop, par = curEle.offsetParent;
         while (par) {
             if (!/MSIE 8/.test(navigator.userAgent)) {
                 eleLeft += par.clientLeft;
@@ -304,10 +304,11 @@ var utils = (function () {
 
     function showHide(elements, show) {
         var display;
-        display = elements.style.display;
+        //display = elements.style.display;
+        display = css(elements, "display");
         if (show) {
             if (display === "none") {
-                elements.style.display = "";
+                elements.style.display = "block";
             }
         }
         else {

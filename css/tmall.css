@@ -1530,7 +1530,7 @@
     background-color: #DD2727;
 }
 
-#content .mui-lift .mui-lift-nav {
+.mui-lift .mui-lift-nav {
     position: relative;
     display: block;
     width: 36px;
@@ -1551,15 +1551,41 @@
     background-color: #F15453;
 }
 
-#content .mui-lift .mui-lift-nav:hover {
+.mui-lift .mui-lift-nav:hover {
     background-color: #000;
 }
 
-#content .mui-lift .color-type-cyan:hover{background-color:#19C8A9}
-#content .mui-lift .color-type-cyan.mui-lift-cur-nav{background-color:#19C8A9}
-#content .mui-lift .color-type-orange:hover{background-color:#F7A945}
-#content .mui-lift .color-type-orange.mui-lift-cur-nav{background-color:#F7A945}
-#content .mui-lift .color-type-red.mui-lift-cur-nav{background-color:#F15453}
+#content .mui-lift .color-type-cyan:hover {
+    background-color: #19C8A9
+}
+
+#content .mui-lift .color-type-pink:hover {
+    background-color: #EA5F8D
+}
+
+#content .mui-lift .color-type-blue:hover {
+    background-color: #0AA6E8
+}
+
+.mui-lift .color-type-cyan.mui-lift-cur-nav {
+    background-color: #19C8A9
+}
+
+#content .mui-lift .color-type-green:hover {
+    background-color: #64C333
+}
+
+#content .mui-lift .color-type-orange:hover {
+    background-color: #F7A945
+}
+
+.mui-lift .color-type-orange.mui-lift-cur-nav {
+    background-color: #F7A945
+}
+
+.mui-lift .color-type-red.mui-lift-cur-nav {
+    background-color: #F15453
+}
 
 #content .mui-lift .mui-lift-nav .mui-lift-nav-name {
     line-height: 12px;

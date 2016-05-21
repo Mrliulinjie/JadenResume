@@ -260,6 +260,12 @@ s, i, em {
     text-decoration: underline;
 }
 
+.sn-menu:hover .menu-hd b {
+    top: 13px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 #site-nav .sn-sitemap .menu-bd {
     width: 1198px;
     border-width: 0 1px 1px;
@@ -337,7 +343,6 @@ s, i, em {
 
 #site-nav .site-brand {
     width: 270px;
-
     border-right: 1px solid #f5f5f5;
 }
 
@@ -388,10 +393,18 @@ s, i, em {
     border: solid #f2f2f2;
     border-width: 0 1px;
     position: relative;
+
 }
 
 .shortcut .fr li a.menu-hd:hover {
     color: #c40000;
+}
+
+.shortcut .fr li a.menu-hd:hover b {
+    top: 13px;
+    color: #c40000;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .shortcut a:link, .shortcut a:visited {
@@ -410,6 +423,8 @@ s, i, em {
     border-color: #bbb transparent transparent;
     font-size: 0;
     line-height: 0;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
 }
 
 /*顶部工具栏end*/
@@ -716,7 +731,7 @@ div#footer {
     overflow: hidden;
 }
 
-.attached-search-container .fp-iconfont {
+.attached-search-container .iconfont {
     width: 160px;
     margin-top: 12px;
     position: absolute;
@@ -730,7 +745,7 @@ div#footer {
     font-family: 'fpIconFont';
 }
 
-.attached-search-container .fp-iconfont span {
+.attached-search-container .iconfont span {
     padding-left: 5px;
     font-size: 10px;
 }

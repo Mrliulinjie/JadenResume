@@ -2,11 +2,405 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-
-    </style>
+    <title>天猫tmall.com--上天猫，就够了</title>
+    <link rel="shorcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/bass.css"/>
+    <link rel="stylesheet" href="css/tmall.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
 </head>
 <body>
+<!--顶部工具栏start-->
+<div class="shortcut" id="site-nav">
+    <div id="sn-bg">
+        <div class="sn-bg-right">
+        </div>
+    </div>
+    <div id="sn-bd">
+        <div class="sn-container">
+            <ul class="fl">
+                <li class="p0"><span>喵，欢迎来天猫</span></li>
+                <li class="login"><a href="#">请登录</a></li>
+                <li class="register"><a href="#">免费注册</a></li>
+            </ul>
+            <ul class="fr" id="frnav">
+                <li class="p0">
+                    <div class="sn-menu">
+                        <a class="menu-hd p10 pr14" href="#">我的淘宝<b></b></a>
+
+                        <div class="menu-bd">
+                            <div class="menu-bd-panel" id="myTaobaoPanel">
+                                <a href="#" target="_top">已买到的宝贝</a>
+                                <a href="#" target="_top">已卖出的宝贝</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont">&#x3449;</i>
+                    <a href="#">我关注的品牌</a>
+                </li>
+                <li>
+                    <em class="iconfont">&#xf01d1;</em>
+                    <a href="#">购物车0件</a>
+                </li>
+                <li class="p0">
+                    <div class="sn-menu">
+                        <a class="menu-hd p10 pr14" href="#">收藏夹<b></b></a>
+
+                        <div class="menu-bd">
+                            <div class="menu-bd-panel">
+                                <a href="#" target="_top">收藏的宝贝</a>
+                                <a href="#" target="_top">收藏的店铺</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="sn-separator p0"></li>
+                <li>
+                    <i class="iconfont">&#x3448;</i>
+                    <a href="#">手机版</a>
+                </li>
+                <li><a href="#">淘宝网</a></li>
+                <li class="sn-seller p0">
+                    <div class="sn-menu">
+                        <a class="menu-hd p10 pr14" href="#">商家支持<b></b></a>
+
+                        <div class="menu-bd sn-seller-lazy" role="menu" aria-hidden="true" id="menu-8">
+                            <ul>
+                                <li><h3>商家：</h3>
+                                    <a target="_top" href="#">商家中心</a>
+                                    <a class="sitemap-right" target="_top" href="#">商家入驻</a>
+                                    <a target="_top" href="#">运营服务</a>
+                                    <a class="sitemap-right" target="_top" href="#">商家品控</a>
+                                    <a target="_top" href="#">商家工具</a>
+                                    <a class="sitemap-right" target="_top" href="#">商家规则</a>
+                                    <a target="_top" href="#">天猫智库</a>
+                                    <a class="sitemap-right" target="_top" href="#">喵言喵语</a>
+                                </li>
+                                <li><h3>帮助：</h3>
+                                    <a target="_top" href="#">帮助中心</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="p0 sn-sitemap">
+                    <div class="sn-menu">
+                        <h3 class="pr14 menu-hd p10 tdNone cursor">
+                            <em class="iconfont">&#x344a;</em>
+                            <span>网站导航</span>
+                            <b></b>
+                        </h3>
+
+                        <div class="menu-bd sn-sitemap-lazy sn-sitemap-bd">
+                            <div class="site-cont site-hot"><h2>热点推荐<span>Hot</span></h2>
+                                <ul class="site-list">
+                                    <li>
+                                        <a href="#">天猫超市</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">喵鲜生</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">科技新品<i class="sn-sitemap-icon sn-sitemap-icon-new"></i> </a></li>
+                                    <li>
+                                        <a href="#">女装新品<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li>
+                                        <a href="#">酷玩街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">内衣新品<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li>
+                                        <a href="#">试美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">运动新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">时尚先生<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li>
+                                        <a href="#">精明妈咪</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">吃乐会<i class="sn-sitemap-icon sn-sitemap-icon-new"></i> </a></li>
+                                    <li>
+                                        <a href="#">企业采购</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">会员积分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">天猫国际</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="site-cont site-market"><h2>行业市场<span>Market</span></h2>
+                                <ul class="site-list">
+                                    <li><a href="#">美妆</a></li>
+                                    <li><a href="#">电器</a></li>
+                                    <li><a href="#">女装<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li><a href="#">男装<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li><a href="#">女鞋</a></li>
+                                    <li><a href="#">男鞋</a></li>
+                                    <li><a href="#">内衣<i class="sn-sitemap-icon  sn-sitemap-icon-hot "></i> </a></li>
+                                    <li><a href="#">箱包</a></li>
+                                    <li><a href="#">运动</a></li>
+                                    <li><a href="#">母婴</a></li>
+                                    <li><a href="">家装</a></li>
+                                    <li><a href="#">医药</a></li>
+                                    <li><a href="#">食品</a></li>
+                                    <li><a href="#">配饰<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+                                    <li><a href="#">汽车</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-cont site-brand"><h2>品牌风尚<span>Brand</span></h2>
+                                <ul class="site-list">
+                                    <li><a href="#">尚天猫</a></li>
+                                    <li><a href="#">大牌街</a></li>
+                                    <li><a href="#">潮牌街</a></li>
+                                    <li><a href="#">天猫原创</a></li>
+                                    <li><a href="#">什么牌子好</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-cont site-help"><h2>服务指南<span>Help</span></h2>
+                                <ul class="site-list">
+                                    <li>
+                                        <a href="#">帮助中心 </a>
+                                    </li>
+                                    <li><a href="#">品质保障 </a></li>
+                                    <li><a href="#">特色服务 </a></li>
+                                    <li><a href="#">7天退换货 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--顶部工具栏end-->
+
+<div id="header">
+    <div class="headerLayout">
+        <div class="headerCon ">
+            <h1 id="mallLogo" class="mall-logo">
+                <span class="mlogo">
+                    <a href="#" title="天猫Tmall.com" target="_top">
+                        <s></s>Tmall.com天猫
+                    </a>
+                </span>
+            </h1>
+
+            <div class="header-extra">
+                <div id="mallSearch" class="mall-search">
+                    <div class="mallSearch-form">
+                        <fieldset>
+                            <legend>天猫搜索</legend>
+                            <div class="mallSearch-input clearfix">
+                                <label for="mq" style="visibility: visible; display: none;">搜索 天猫 商品/品牌/店铺 </label>
+
+                                <div class="s-combobox" id="s-combobox-108">
+                                    <div class="s-combobox-input-wrap">
+                                        <input type="text" name="q" id="mq" tabindex="9" accesskey="s"
+                                               autocomplete="off" x-webkit-speech=""
+                                               x-webkit-grammar="builtin:translate" class="s-combobox-input"
+                                               role="combobox" aria-haspopup="true" title="请输入搜索文字"
+                                               aria-label="请输入搜索文字">
+                                    </div>
+                                    <label for="mq" class="s-combobox-placeholder"
+                                           style="color: rgb(102, 102, 102); visibility: visible;">
+                                        <潮鞋配搭运动一夏></潮鞋配搭运动一夏>
+                                    </label>
+                                </div>
+                                <button type="submit">搜索</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page lang-zh-S">
+    <div class="steps steps-4">
+        <ol>
+            <li class="active"><i>1</i><span class="tsl">设置用户名</span></li>
+            <li><i>2</i><span class="tsl">填写账号信息</span></li>
+            <li><i>3</i><span class="tsl">设置支付方式</span></li>
+            <li><i>4</i><span class="tsl">注册成功</span></li>
+        </ol>
+    </div>
+    <div class="content">
+        <div action="#" method="post" id="J_MobileForm">
+            <div class="form-list form-main-list">
+                <div class="form-group">
+                    <div class="form-item">
+                        <span class="form-label tsl" data-phase-id="r_p_mobileNum">手机号</span>
+
+                        <div class="mobile-text">
+
+                            <div id="ks-component64" class="tb-select tb-select tb-menu-button tb-button" tabindex="0"
+                                 role="button" title="" aria-describedby="" aria-expanded="false" aria-haspopup="true"
+                                 style="width: 150px; -webkit-user-select: none;">
+                                <div id="ks-content-ks-component64"
+                                     class="tb-select-content tb-select-content tb-menu-button-content tb-button-content">
+                                    <span class="text" title="中国大陆">中国大陆</span><span class="code">+86</span></div>
+                                <div class="tb-select-dropdown tb-select-dropdown tb-menu-button-dropdown tb-button-dropdown">
+                                    <div class="tb-select-dropdown-inner tb-select-dropdown-inner tb-menu-button-dropdown-inner tb-button-dropdown-inner">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mobile_area" value="1">
+
+                            <input autocomplete="off" class="form-text mobile-input" name="mobile" id="J_Mobile"
+                                   type="text" value="" placeholder="请输入你的手机号码"
+                                   data-inner_placeholder="r_p_input_inner_enterMobile"
+                                   data-outer_placeholder="r_p_input_enterMobile">
+
+                        </div>
+                    </div>
+                    <div class="form-item">
+	<span class="form-label tsl" data-phase-id="r_p_noCaptcha">
+		验证</span>
+
+                        <div id="register_no_captcha" class="nc-container" data-nc-idx="1">
+                            <div id="nc_1_wrapper" class="nc_wrapper">
+                                <div id="nc_1_n1t" class="nc_scale">
+                                    <div id="nc_1__scale_text" class="scale_text slidetounlock"><span
+                                            class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-item form-item-short">
+                        <button type="submit" class="btn btn-large tsl btn-disabled" data-phase-id="r_p_next"
+                                id="J_BtnMobileForm" disabled="">下一步
+                        </button>
+                        <div class="msg msg-type-error" data-type="error" data-show="0" id="J_MsgMobileForm"
+                             data-display="block"><i class="iconfont"></i>
+                            <div class="msg-tit"></div>
+                            <div class="msg-cnt" aria-live="assertive"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--footer部分start-->
+<div id="footer" style="display: block;">
+    <div id="tmall-ensure">
+        <a href="//www.tmall.com/wow/seller/act/pinkong"></a>
+        <a href="//www.tmall.com/wow/seller/act/seven-day"></a>
+        <a href="//www.tmall.com/wow/seller/act/special-service"></a>
+        <a href="//service.tmall.com/support/tmall/tmallHelp.htm"></a>
+    </div>
+    <div id="tmall-desc">
+        <div class="mui-global-fragment-load" data-fragment="tmbase/mui_footer_desc">
+            <dl id="ensure">
+                <dt><span>购物指南</span></dt>
+                <dd><a href="//register.tmall.com/" target="_blank">免费注册</a> <a
+                        href="https://www.alipay.com/user/reg_select.htm" target="_blank">开通支付宝</a> <a
+                        href="https://www.alipay.com/user/login.htm?goto=https%3A%2F%2Fwww.alipay.com%2Fuser%2Finpour_request.htm"
+                        target="_blank">支付宝充值</a></dd>
+            </dl>
+            <dl id="beginner">
+                <dt><span>天猫保障</span></dt>
+                <dd><a href="//service.tmall.com/support/tmall/knowledge-1140860.htm" target="_blank">发票保障</a> <a
+                        href="//service.tmall.com/support/tmall/knowledge-1124063.htm" target="_blank">售后规则</a> <a
+                        href="//service.tmall.com/support/tmall/knowledge-1126800.htm" target="_blank">缺货赔付</a></dd>
+            </dl>
+            <dl id="payment">
+                <dt><span>支付方式</span></dt>
+                <dd><a href="https://payservice.alipay.com/intro/index.htm?c=kjzf" target="_blank">快捷支付</a> <a
+                        href="https://payservice.alipay.com/intro/index.htm?c=xyk" target="_blank">信用卡</a> <a
+                        href="https://payservice.alipay.com/intro/index.htm?c=yeb" target="_blank">余额宝</a> <a
+                        href="https://payservice.alipay.com/intro/index.htm?c=hb" target="_blank">蚂蚁花呗</a> <a
+                        href="//tms.alicdn.com/market/cainiao/codchn.php" target="_blank">货到付款</a></dd>
+            </dl>
+            <dl id="seller">
+                <dt><span>商家服务</span></dt>
+                <dd><a href="//zhaoshang.tmall.com/" target="_blank" class="join">商家入驻</a> <a
+                        href="//shangjia.tmall.com/portal.htm" target="_blank">商家中心</a> <a href="//peixun.tmall.com/"
+                                                                                           target="_blank">天猫智库</a> <a
+                        href="//www.tmall.com/wow/seller/act/guize" target="_blank">天猫规则</a> <a href="//e56.tmall.com"
+                                                                                                target="_blank">物流服务</a>
+                    <a href="//maowo.tmall.com/" target="_blank">喵言喵语</a> <a href="//fw.tmall.com/"
+                                                                             target="_blank">运营服务</a></dd>
+            </dl>
+            <dl id="mobile">
+                <dt>手机天猫</dt>
+                <dd><a href="//mobile.tmall.com/" class="join">
+                    <img src="//img.alicdn.com/tps/i1/TB14VZKHXXXXXcAXXXX64VRZFXX-105-105.png" width="105" height="105"
+                         alt="手机天猫"></a>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+    <div id="tmall-copyright">
+        <div class="mui-global-fragment-load" data-fragment="tmbase/mui_footer_link"><p class="footer-tmallinfo">
+            <a href="//pages.tmall.com/wow/seller/act/zhaoshangproduce" target="_blank">关于天猫</a>
+            <a href="//service.tmall.com/support/tmall/tmallHelp.htm" target="_blank">帮助中心</a>
+            <a href="//open.taobao.com" target="_blank">开放平台</a>
+            <a href="//job.alibaba.com/zhaopin/index.htm" target="_blank">诚聘英才</a>
+            <a href="//www.tmall.com/wow/portal/act/contact" target="_blank">联系我们</a>
+            <a href="//xtao.tmall.com?tracelog=tmallfoot" target="_blank">网站合作</a>
+            <a href="//rule.tmall.com/tdetail-1814.htm" target="_blank">法律声明</a>
+            <a href="http://ipp.alibabagroup.com/" target="_blank">知识产权</a>
+            <a href="http://jubao.alibaba.com/" target="_blank">廉正举报</a>
+            <a class="footer-fp-rule" style="display:none;" href="//rule.tmall.com/trulecycle.htm" target="_blank">规则意见征集</a>
+        </p>
+
+            <p class="footer-otherlink">
+                <a href="http://www.alibabagroup.com/cn/global/home" target="_blank">阿里巴巴集团</a>|
+                <a href="//www.taobao.com" target="_blank">淘宝网</a> |
+                <a href="//www.tmall.com/" target="_blank">天猫</a> |
+                <a href="//ju.taobao.com/" target="_blank">聚划算</a> |
+                <a href="http://www.aliexpress.com/" target="_blank">全球速卖通</a> |
+                <a href="http://www.alibaba.com/" target="_blank">阿里巴巴国际交易市场</a>|
+                <a href="//www.1688.com/" target="_blank">1688</a> |
+                <a href="//www.alimama.com/" target="_blank">阿里妈妈</a> |
+                <a href="//www.alitrip.com" target="_blank">阿里旅行·去啊</a> |
+                <a href="http://www.aliyun.com/" target="_blank">阿里云计算</a> |
+                <a href="http://www.yunos.com/" target="_blank">YunOS</a> |
+                <a href="http://aliqin.cn/" target="_blank">阿里通信</a> |
+                <a href="http://www.net.cn/" target="_blank">万网</a> |
+                <a href="http://www.autonavi.com/" target="_blank">高德</a> |
+                <a href="http://www.uc.cn/" target="_blank">优视</a> |
+                <a href="http://www.umeng.com/" target="_blank">友盟</a> |
+                <a href="http://www.xiami.com/" target="_blank">虾米</a> |
+                <a href="http://www.ttpod.com/" target="_blank">天天动听</a> |
+                <a href="http://www.laiwang.com/" target="_blank">来往</a> |
+                <a href="http://www.dingtalk.com/?lwfrom=20150205115110773" target="_blank">钉钉</a> |
+                <a href="https://www.alipay.com" target="_blank">支付宝</a>
+            </p>
+
+            <div class="footer-copyright">增值电信业务经营许可证：
+                <a data-spm-protocol="i" href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">浙B2-20110446</a>网络文化经营许可证：
+                <a href="#" target="_blank">浙网文[2015]0295-065号</a>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号
+                <br>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005<b>© 2003-2016 TMALL.COM 版权所有</b>
+
+                <p style="padding-top:10px; display:none;" class="footer-fp-img">
+                    <a style="margin-right:10px" target="_blank" href="#">
+                        <img src="img/footer/footer-fp-img.jpg"></a>
+                    <a target="_blank" href="#">
+                        <img src="img/footer/footer-fp-img2.jpg"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="server-num">wormholesource010185106013.unsz.su18.production</div>
+</div>
+
+<!--footer部分end-->
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
 </body>
 </html>
